@@ -1,8 +1,16 @@
-import sys
+# with open("./input.txt", "r") as file:
+#     input_data = file.read().splitlines()
 
-sys.stdin = open ('input.txt', 'r')
+# num = int(input_data[0])
 
-N = int(input())
-a , b = map(int, input().split())
+# for i in range(num) :
+#     a, b = map(int, input_data[i+1].split())
+#     result = a + b
+#     print(result)
 
-print (a, b)
+num = int(input())
+
+for i in range(num) : 
+    a, b = map(int,input().split())
+    result = a + b
+    print(result)
