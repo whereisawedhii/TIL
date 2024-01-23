@@ -17,14 +17,11 @@
 
 
 N, money = map(int, input().split())
-coins= [int(input().strip()) for i in range(N)]
+coins= [int(input()) for i in range(N)]
 coins.sort(reverse=True)
 counts = 0
 
 for i in coins : 
-    if money == 0 :
-        break
-    elif i < money : 
         counts += money // i
         money = money % i
 
