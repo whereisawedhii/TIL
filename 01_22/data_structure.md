@@ -138,7 +138,7 @@ print(string2.islower()) # False
 - `'separator'.join(iterable)` : 앞쪽에 구분자가 문자열로 나옴, iterable 요소들을 구분자를 이용하여 하나의 문자열로 연결 <br> split과 반대
 - `s.capitalize()` : 가장   첫 번째   글자를   대문자로   변경
 - `s,title()` : 문자열 내 띄어쓰기 기준으로 각 단어의 첫 글자는 대문자로, 나머지는 소문자로 변환
-- `s.uper()` : 모두 대문자로 변경
+- `s.upper()` : 모두 대문자로 변경
 - `s.lower()` : 모두 소문자로 변경
 - `s.swapcase()` : 대↔소문자 서로 변경
 

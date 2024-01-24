@@ -1,9 +1,9 @@
-# import sys
-# sys.stdin = open('input.txt', 'r')
+import sys
+sys.stdin = open('input.txt', 'r')
 
 
-# N, money = map(int, sys.stdin.readline().split())
-# coins= [int(sys.stdin.readline().strip()) for i in range(N)]
+N, money = map(int, sys.stdin.readline().split())
+coins= [int(sys.stdin.readline().strip()) for i in range(N)]
 
 # coins.sort(reverse=True)
 # counts = 0
