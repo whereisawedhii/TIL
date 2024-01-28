@@ -31,7 +31,8 @@ def recommendation(track, artist, genre):
     headers = getHeaders()
     params = {
         'seed_artists': {artist_id},
-        'seed_genres': {genre},
+        #'seed_genres': {genre} 두 param 값으로 검색시 다른 응답을 받지만 응답 내에 genre를 확인할 수 없어 어떤 부분이 맞는지 정확하지 않음
+        'seed_genres': f"{genre}",
         'seed_tracks': {track_id},
         'market': 'KR',
         'limit': 5,
@@ -41,7 +42,7 @@ def recommendation(track, artist, genre):
 
     recommended_tracks = [each.get('name') for each in recommended_raw]
 
-    return recommended_tracks
+    return recommended_raw
 
 
 
