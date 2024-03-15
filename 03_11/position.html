@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 포지션 스타일 속성 */
+        /* 
+        static
+        relative
+        absolute
+        fixed
+        sticky
+        */
+        div {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        /* static */
+        .static-example {
+            /* position: static */
+            background-color: aqua;
+        }
+        /* relative */
+        .relative-example{
+            position: relative;
+            background-color: yellow;
+            top: 50px;
+            left: 50px;
+        }
+        /* absolute */
+        .absolute-example {
+            position: absolute;
+            background-color: blueviolet;
+            color: aliceblue;
+            bottom: 50px;
+            right: 50px;
+        }
+        /* fixed */
+        .fixed-example {
+            position: fixed;
+            background-color: crimson;
+            top: 50px;
+            right: 50px;
+        }
+        /* sticky */
+        .sticky-example {
+            position: sticky;
+            background-color: coral;
+            top: 50px;
+        }
+        .dummy-height {
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static-example">
+        <h1>position: static</h1>
+        <p>요소의 기본값으로, 요소들은 문서의 흐름에 따라 배치됨</p>
+    </div>
+    <div class="relative-example">
+        <h1>position: relative</h1>
+        <p>요소의 흐름에 따라 배치하고,
+            top, bottom, left, right 값을 활용하여 위치를 이동할 수 있습니다.
+        </p>
+    </div>
+    <div class="absolute-example">
+        <h1>position: absolute</h1>
+        <p>요소의 문서의 원래 위치에서 제거하고, (흐름에서 벗어남) 
+            가장 가까운 상위 요소 중, relative를 찾아 해당 요소에 대해 상대적으로 배치함
+            만약, 상위 요소 중 relative를 찾을 수 없다면 body tag를 기준으로 배치됨
+        </p>
+    </div>
+    <div class="fixed-example">
+        <h1>position: fixed</h1>
+        <p>요소의 문서의 원래 위치에서 제거하고, (흐름에서 벗어남)
+            viewport를 기준으로 고정합니다.
+        </p>
+    </div>
+    <div class="sticky-example">
+        <h1>position: sticky</h1>
+        <p>요소의 흐름에 따라 배치하고,
+            스크롤을 통해 정해진 임계점에 도달하면, fixed로 바뀐다.
+        </p>
+    </div>
+    <div>
+        <h2>html Normal Flow</h2>
+    </div>
+    <div class="dummy-height"></div>
+
+</body>
+</html>

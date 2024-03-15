@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap')
+
+* {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+
+.footer {
+/* 맨 아래 고정 */
+    position: fixed;
+    bottom: 0;
+/* 검은배경 */
+    background-color: black;
+/* 꽉 차게 */
+    width: 100%;
+/* 흰색 */
+    color: white;
+/* 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.frontpage {
+    height: 100px;
+    background-color: lightgray;
+
+}
+
+.my-intro {
+    height: 100px;
+}
+
+.project {
+    height: 100px;
+}
+
+.contact {
+    height: 100px;
+    background-color: lightgrey;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1000px){
+    .article {
+        display: flex;
+    }
+
+    .frontpage .my-intro {
+        width: 50%;
+    }
+    .skills {
+        width: 30%;
+    }
+
+    .project {
+        width: 70%;
+    }
+}

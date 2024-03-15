@@ -1,0 +1,10 @@
+{% extends "articles/base.html" %}
+
+{% block content %}
+<ul>
+    {% for char in message %}
+        <li class="text-lg-center">{{ char }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
+

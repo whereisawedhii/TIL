@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>주목할 만한 신간 도서 목록</h1>
+<table class="table">
+    {% for title, author in book_info %}
+      <tr>
+        <td>
+            <div class="container">
+                <p>제목: {{title}}</p>
+                <p>저자: {{author}}</p>
+            </div>
+        </td>
+      </tr>
+    {% endfor %}
+{% endblock content %}

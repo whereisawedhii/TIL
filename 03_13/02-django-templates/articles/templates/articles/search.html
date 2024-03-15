@@ -1,0 +1,15 @@
+{% extends "articles/base.html" %}
+
+{% block content %}
+    {% comment %} 데이터를 어디로 보낼 것인지 {% endcomment %}
+    {% comment %} HTTP request method : POST, GET {% endcomment %}
+    <form action="https://search.naver.com/search.naver">
+        <label for="message">검색 : </label>
+        {% comment %} 무슨 데이터를 보낼 것인지 {% endcomment %}
+        {% comment %} input의 id 값은 labal의 for와 동일하게  {% endcomment %}
+        {% comment %} input의 name값을 key로, 실제 input은 value로 하여 데이터를 보내게 됨 {% endcomment %}
+        <input type="text" id="message" name="query">
+        <input type="submit">
+    </form>
+{% endblock content %}
+

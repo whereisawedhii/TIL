@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 연습</title>
+    <style>
+        /* 선택자 연습 */
+
+        /* 선택자는 우선 순위가 있습니다. 
+        1. !important
+        2. 인라인 스타일
+        3. 아이디 선택자
+        4. 클래스 선택자
+        5. 태그 선택자
+        6. 전체 선택자
+        7. 상속
+        */
+
+        /* 전체선택자 * : 선택자 중에 가장 광범위한 영역에 동일한 스타일의 적용이 가능 (가장 낮은 우선순위) */
+        * {  
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* 요소(태그) 선택자  */
+        h1 {
+            color: red;
+        }
+        div {
+            background-color: aliceblue;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        p {
+            color: blue;
+        }
+
+        /* 클래스 선택자 . :  */
+        .container {
+            width: 1000px;
+            background-color: aqua;
+            font-size: 20px;
+        }
+
+        /* !important : 권장하지 않는 선택자*/
+        .p-important {
+            color: darkcyan !important;
+        }
+
+        /* 자손 선택자 */
+        .container p{
+            color: magenta;
+        }
+
+        /* 자식 선택자 */
+        .container > p{
+            color: darkblue;
+        } 
+        
+        .container > h1{
+            color: beige;
+        }
+
+        /* id selecter */
+        #p-id {
+            font-size: 200px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>웹 디자인 기초</h1>
+    <p>시작해봅시다</p>
+    <div class="container">
+        <h1>자식 선택자</h1>
+        <p>자식 p tag 입니다.</p>
+        <div>
+            <h3>자손 선택자</h3>
+            <p>자손 p tag 입니다.</p>
+            <p class="p-important">I am 중요해요.</p>
+            <p id="p-id">p1</p>
+            <p id="p-id">p2</p>
+        </div>        
+    </div>
+    
+</body>
+</html>
